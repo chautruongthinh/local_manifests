@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Please do not manually edit this file-->
 <manifest>
+<!-- Devcie -->
   <project name="chautruongthinh/android_device_pantech_ef63" path="device/pantech/ef63" remote="github" revision="dot-p" />
   <project name="chautruongthinh/android_device_pantech_msm8974-common" path="device/pantech/msm8974-common" remote="github" revision="dot-p" />
   <project name="chautruongthinh/android_vendor_pantech" path="vendor/pantech" remote="github" revision="dot-p" />
   <project name="chautruongthinh/android_kernel_pantech_msm8x74" path="kernel/pantech/msm8x74" remote="github" revision="dot-p" />
+
+<!-- HardWare QCOM -->
+<project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="los" revision="lineage-16.0-caf-8974" />
+<project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="los" revision="lineage-16.0-caf-8974" />
+<project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom" remote="los" revision="lineage-16.0-caf-8974" />
 </manifest>
 
