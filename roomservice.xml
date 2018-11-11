@@ -11,5 +11,9 @@
 <project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="los" revision="lineage-16.0-caf-8974" />
 <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="los" revision="lineage-16.0-caf-8974" />
 <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom" remote="los" revision="lineage-16.0-caf-8974" />
+
+<!-- QCOM Sepolicy -->
+<project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy-legacy" remote="los" revision="lineage-16.0" />
+
 </manifest>
 
