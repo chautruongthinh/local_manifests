@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Please do not manually edit this file-->
 <manifest>
+  <remote  name="los"
+           fetch="https://github.com/lineageos"
+           revision="refs/heads/lineage-16.0" />
 <!-- Devcie -->
-  <project name="chautruongthinh/android_device_pantech_ef63" path="device/pantech/ef63" remote="github" revision="dot-p" />
+  <project name="chautruongthinh/android_device_pantech_ef63" path="device/pantech/ef63" remote="github" revision="SuperiorOS-pie" />
   <project name="chautruongthinh/android_device_pantech_msm8974-common" path="device/pantech/msm8974-common" remote="github" revision="dot-p" />
   <project name="chautruongthinh/android_vendor_pantech" path="vendor/pantech" remote="github" revision="lineage-16.0" />
   <project name="chautruongthinh/android_kernel_pantech_msm8x74" path="kernel/pantech/msm8x74" remote="github" revision="lineage-16.0" />
@@ -12,11 +15,22 @@
   <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="los" revision="lineage-16.0-caf-8974" />
   <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom" remote="los" revision="lineage-16.0-caf-8974" />
 
-<!-- QCOM Sepolicy Legacy -->
-  <project name="chautruongthinh/android_device_qcom_sepolicy-legacy" path="device/qcom/sepolicy-legacy" remote="github" revision="lineage-16.0" />
+<!-- Launcher3 -->
+  <project name="PixysOS/packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="pie" />
 
-<!-- More -->
-  <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="los" revision="lineage-15.1" />
-  <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="los" revision="lineage-16.0" />
+<!-- Snap -->
+  <project name="chautruongthinh/packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="pie" />
+
+<!-- Using my repo -->
+<remove-project name="android_packages_apps_Camera2" />
+
+<remove-project name="android_frameworks_base" />
+<project path="frameworks/base" name="chautruongthinh/android_frameworks_base" remote="github" revision="pie" />
+
+<remove-project name="android_frameworks_av" />
+<project path="frameworks/av" name="chautruongthinh/android_frameworks_av" remote="github" revision="pie" />
+
+<remove-project name="android_vendor_superior" />
+<project path="vendor/superior" name="chautruongthinh/android_vendor_superior" remote="github" revision="pie" />
 </manifest>
 
