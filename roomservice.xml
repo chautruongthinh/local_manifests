@@ -19,7 +19,7 @@
   <project name="PixysOS/packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="pie" />
 
 <!-- Snap -->
-  <project name="chautruongthinh/packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="pie" />
+  <project name="chautruongthinh/android_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="pie" />
 
 <!-- Using my repo -->
 <remove-project name="android_packages_apps_Camera2" />
